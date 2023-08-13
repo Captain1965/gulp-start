@@ -1,3 +1,9 @@
-body{
-  background: #c56969;
-}
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import "global";
+
+
+
+
+@import 'media';

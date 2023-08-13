@@ -1,0 +1,12 @@
+#стандартное наполнение
+.DS_Store
+.idea/
+.idea/*
+.vscode
+*.sublime*
+npm-debug.*
+#дополнительно
+project/     
+node_modules/
+package-lock.json
+#src/css/*
