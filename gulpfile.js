@@ -115,28 +115,26 @@ function images() {
     )
     .pipe(dest(path.build.img))
     .pipe(browsersync.stream())
-    .pipe(dest(path.build.img))
+    .pipe(dest(path.build.img));
 }
 
-function fonts(){
-  src(path.src.fonts)
-  .pipe(ttf2woff())
-  .pipe(dest(path.build.fonts))
-   return src(path.src.fonts)
-   .pipe(ttf2woff2())
-   .pipe(dest(path.build.fonts));
+function fonts() {
+  src(path.src.fonts).pipe(ttf2woff()).pipe(dest(path.build.fonts));
+  return src(path.src.fonts).pipe(ttf2woff2()).pipe(dest(path.build.fonts));
 }
 
 // для выполнения сначала нужно в терминале запустить   gulp otf2ttf
 // затем запустить gulp как обычно
 
-gulp.task('otf2ttf', function() {
-  return src([source_folder + '/fonts/*.otf'])
-  .pipe(fonter({
-    formats: ['ttf']
-  }))
-  .pipe(dest(source_folder + '/fonts/'))
-})
+gulp.task("otf2ttf", function () {
+  return src([source_folder + "/fonts/*.otf"])
+    .pipe(
+      fonter({
+        formats: ["ttf"],
+      })
+    )
+    .pipe(dest(source_folder + "/fonts/"));
+});
 
 gulp.task("svgSprite", function () {
   return gulp.src([source_folder + "/iconsprite/*.svg"]);

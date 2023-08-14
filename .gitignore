@@ -9,4 +9,8 @@ npm-debug.*
 project/     
 node_modules/
 package-lock.json
+*.psd
+img_samples
+
+#возможно не нужно заливать #src
 #src/css/*
