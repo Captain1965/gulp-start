@@ -1,10 +1,9 @@
 body {
   color: $default;
   font-size: 16px;
-  font-size: 26px;
   color: $default;
   @extend %quicksand-500;
-  // line-height: 26px;
+  line-height: 26px;
 }
 
 .container {
