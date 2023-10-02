@@ -1,3 +1,6 @@
-body{
-  background: #c56969;
-}
+@import ("_reset.scss");
+@import ("_vars.scss");
+@import ("_global.scss");
+@import ("_fonts.scss");
+@import ("_libs.scss);
+@import ("_adaptive.scss);
