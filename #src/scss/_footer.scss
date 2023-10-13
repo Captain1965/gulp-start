@@ -1,0 +1,62 @@
+.footer {
+  background-color: $bg;
+  color: $default;
+  max-width: 1440px;
+  &__wrapper {
+    display: grid;
+    column-gap: 58px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  &__item-name {
+    @extend %opensans-400;
+    font-size: 11px;
+    letter-spacing: 0.846px;
+    margin-bottom: 20px;
+    grid-column: span 3;
+  }
+
+  &__item-text {
+    padding-top: 15px;
+    max-width: 250px;
+  }
+
+  &__list {
+    display: grid;
+    column-gap: 38px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &__item-social {
+    display: flex;
+    justify-content: center;
+  }
+  &__list-link {
+    color: $default;
+    @extend %opensans-400;
+    font-size: 11px;
+    letter-spacing: 0.846px;
+  }
+
+  &__design-text {
+    padding: 50px;
+    text-align: center;
+  }
+  &__item-socialsvg {
+    padding: 20px 12px 0;
+  }
+
+  &__contact {
+    &-adress {
+      max-width: 141px;
+      margin-bottom: 10px;
+    }
+    &-phone{
+      margin-bottom: 10px;
+    }
+  }
+
+  &__contact-titel {
+    @extend %opensans-400;
+    font-size: 11px;
+    letter-spacing: 0.846px;
+  }
+}

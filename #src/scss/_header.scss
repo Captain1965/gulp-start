@@ -1,0 +1,65 @@
+.header {
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+    border-bottom: solid 1px #e6e6e6;
+    margin-bottom: 55px;
+  }
+  &__inner {
+    margin: 0 auto;
+    padding: 41px 0 71px;
+    max-width: 1440px;
+    height: 100vh;
+    background-image: url(../img/images/bg-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__inner-link {
+    margin-bottom: 30px;
+    color: $default;
+    @extend %opensans-600;
+    font-size: 11px;
+    letter-spacing: 3.7px;
+  }
+  &__inner-title {
+    margin-bottom: 5px;
+    color: $default;
+    text-transform: uppercase;
+    text-align: center;
+    @extend %bebasneue;
+    font-size: 60px;
+    letter-spacing: 5.709px;
+  }
+  &__inner-subtitle {
+    color: $default;
+    text-align: center;
+    @extend %opensans-600;
+    font-size: 16px;
+  }
+  &__menu {
+    padding: 25px 0 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__menu-list {
+    display: flex;
+  }
+  &__menu-item + &__menu-item {
+    padding-left: 45px;
+  }
+  &__menu-link {
+    color: $title;
+    @extend %opensans-600;
+    font-size: 12px;
+    letter-spacing: 1.091px;
+    transition: all 0.5s;
+    &:hover {
+      color: $accent;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.service {
+  // margin-bottom: 115px;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 78px;
+  }
+  &__title {
+    max-width: 200px;
+    @extend %opensans-700;
+    color: $title;
+    font-size: 18px;
+    letter-spacing: 2.3px;
+    margin-right: 155px;
+  }
+  &__text {
+    max-width: 405px;
+    @extend %opensans-400;
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+  }
+  &__btn {
+    @extend %btn;
+  }
+  &__inner{
+    display: grid;
+    grid-gap: 27px;
+    grid-template-columns: repeat(3, 1fr);
+   
+  }
+  &__item{
+   border: solid 1px #E6E6E6;
+   padding: 38px 23px;  
+  }
+  &__item-svg{
+    margin-bottom: 25px;
+  }
+  &__item-title{
+    margin-bottom: 13px;
+    color: $title;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.427px;
+    @extend %opensans-700;
+
+  }
+}

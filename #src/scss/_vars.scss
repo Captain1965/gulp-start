@@ -1,1 +1,51 @@
+$accent: #00a4e5;
+$default: #ffff;
+$title: #48555b;
+$bg: #141a20;
 
+%bebasneue {
+  font-family: "BebasNeue-Regular", sans-serif;
+  font-weight: 400;
+}
+
+%opensans-400 {
+  font-family: "OpenSans-Regular", sans-serif;
+  font-weight: 400;
+}
+
+%opensans-600 {
+  font-family: "OpenSans-SemiBold", sans-serif;
+  font-weight: 600;
+}
+%opensans-700 {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-weight: 700;
+}
+%opensans-800 {
+  font-family: "OpenSans-ExtraBold", sans-serif;
+  font-weight: 800;
+}
+
+%underline {
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 50px;
+    border: solid 2px $accent;
+    text-align: center;
+    top: 28px;
+    left: 47%;
+  }
+}
+%btn{
+  width: 150px;
+  height: 40px;
+    border: none;
+    background-color: $accent;
+    color: #ffff;
+    text-align: center;
+    @extend %opensans-700;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}

@@ -1,0 +1,66 @@
+.story {
+  margin-bottom: 120px;
+  &__title {
+    text-align: center;
+    margin-bottom: 92px;
+    position: relative;
+    @extend %underline;
+  }
+  &__inner {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__description {
+    max-width: 405px;
+  }
+  &__title-inner {
+    color: $title;
+    font-size: 20px;
+    @extend %opensans-700;
+    margin-bottom: 30px;
+    letter-spacing: 0.17px;
+    span {
+      color: $accent;
+    }
+  }
+  &__text {
+    @extend %opensans-400;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.188px;
+  }
+  &__pages {
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &__img {
+    width: 300px;
+    height: 225px;
+  }
+  &__link {
+    position: relative;
+    &::before {
+      content: "WE PLAN";
+      position: absolute;
+      width: 68px;
+      height: 58px;
+      top: 10px;
+      left: 10px;
+      color: $default;
+      @extend %opensans-700;
+      line-height: 29px;
+      letter-spacing: 0.18px;
+      font-size: 24px;
+    }
+    &:nth-child(2)::before {
+      width: 110px;
+      content: "WE MANAGE";
+    }
+    &:nth-child(3)::before {
+      width: 110px;
+      content: "WE BUILD";
+    }
+  }
+}
